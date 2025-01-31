@@ -6,6 +6,12 @@ from django.urls import reverse
 from django.http import HttpResponse 
 def home(request): 
     return HttpResponse("Hello, world. This is the index view of Demoapp.") 
+def about(request):
+    return HttpResponse("About us")
+def menu(request):
+    return HttpResponse("Menu")
+def book(request):
+    return HttpResponse("Make a booking")
 def drinks(request, name):
     query = name
     return HttpResponse("<h1> %s <h1>" %query)

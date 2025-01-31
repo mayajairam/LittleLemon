@@ -7,3 +7,5 @@ from django.urls import reverse
 from django.http import HttpResponse 
 def index(request): 
     return HttpResponse("Hello, world. This is the index view of Demoapp.") 
+def contact(request): 
+    return HttpResponse("Hello contact us.") 

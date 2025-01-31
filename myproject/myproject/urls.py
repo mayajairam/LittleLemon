@@ -19,9 +19,12 @@ from django.urls import include, path
 
 from demoapp import views
 from newapp import views
+from myproject import views
 
 urlpatterns = [ 
     path('admin/', admin.site.urls), 
-    path('demo/', include('demoapp.urls')), 
-    path('newdemo/', include('newapp.urls')), 
+    path('', include('demoapp.urls')), 
+    path('', include('newapp.urls')), 
 ] 
+
+handler404 = 'myproject.views.handler404'
