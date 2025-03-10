@@ -5,8 +5,9 @@ app_name='demoapp'
 urlpatterns = [ 
     path('', views.home, name='home'),
     path('about/', views.about, name="about"), 
-    path('menu', views.menu, name="menu"), 
+    path('menu/', views.menu, name="menu"), 
     path('book/', views.book, name="book"), 
-    path('drinks/<str:name>', views.drinks, name="drinks"),
-    path('dishes/<str:dish>', views.menuitems),
+    path('drinks/<str:name>/', views.drinks, name="drinks"),
+    path('dishes/<str:dish>/', views.menuitems, name="menuitems"),
+    path('home/', views.DemoForm_view, name="home_form")
 ] 
