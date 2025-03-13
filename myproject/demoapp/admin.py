@@ -6,12 +6,14 @@ from django.contrib.auth.admin import UserAdmin
 from django.contrib.auth.models import User 
 from .models import Person 
 from .models import Reservation
+from .models import Employees
 
 # Register your models here.
 admin.site.register(Menu)
 admin.site.register(MenuCategory)
 admin.site.register(Logger)
 admin.site.register(Reservation)
+admin.site.register(Employees)
 
 class NewAdmin(UserAdmin): 
     def get_form(self, request, obj=None, **kwargs): 

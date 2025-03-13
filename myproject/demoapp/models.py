@@ -47,3 +47,10 @@ class Reservation(models.Model):
 
     def __str__(self):
         return self.first_name + " " + self.last_name + " " + self.contact + " " +  self.time.strftime('%H:%M:%S') + " " + str(self.count)
+
+class Employees(models.Model):
+    last_name = models.CharField(max_length = 100)
+    first_name = models.CharField(max_length = 100)
+    role = models.CharField(max_length = 100)
+    shift = models.IntegerField()
+    
