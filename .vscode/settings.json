@@ -12,6 +12,21 @@
             "name": "Local MySQL",
             "username": "root",
             "database": "mydatabase"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "LittleLemon",
+            "group": "127.0.0.1",
+            "database": "littlelemon",
+            "username": "django",
+            "password": "djangodev123"
         }
     ]
 }
